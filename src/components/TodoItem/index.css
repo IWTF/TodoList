@@ -1,0 +1,47 @@
+
+.item {
+  background-color: aliceblue;
+  padding: 4px 10px;
+  border-top: 1px dashed #6e6e6e60;
+}
+
+.item span {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.itemIcon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #cc530390;
+  border-radius: 50%;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.itemIcon:active::after {
+  content: '✔';
+  position: absolute;
+  top: -3px;
+  left: 1px;
+  width: 20px;
+  height: 20px;
+  color: #de1c3160;
+}
+
+.donIcon::after {
+  content: '✔';
+  position: absolute;
+  top: -3px;
+  left: 1px;
+  width: 20px;
+  height: 20px;
+  color: #de1c3160;
+}
+
+.trach {
+  float: right;
+  margin-right: 3px;
+  cursor: pointer;
+}

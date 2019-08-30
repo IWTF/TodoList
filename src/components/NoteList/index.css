@@ -1,0 +1,91 @@
+.container {
+  width: 100% - 10;
+  height: 260px;
+  box-sizing: border-box;
+  padding: 0 0 0 25px;
+  margin: -10px 10px 10px;
+  border:  8px solid #c45a6550;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.leftSection {
+  width: 60px;
+  height: 100%;
+  border-right: 4px dashed aqua;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  overflow:auto
+}
+
+.rightSection {
+  width: 44px;
+}
+
+.rightBtn {
+  padding: 2px 6px 4px;
+  height: 19px;
+  background-color: rgba(0, 255, 255, 0.319);
+}
+
+.title1, .title2 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  font-size: 27px;
+  font-weight: bold;
+  color: rgb(12, 115, 204);
+}
+
+.title1::after {
+  content: '';
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-20%, -20%) rotate(22deg);
+  background-color: rgba(0, 255, 255, 0.319);
+}
+
+.title2::after {
+  content: '';
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-20%, -20%) rotate(122deg);
+  background-color: rgba(0, 255, 255, 0.319);
+}
+
+.noteText {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 0;
+  height: 0;
+  background-color: rgba(0, 255, 255, 0.319);
+  animation: showText .3s linear 1 forwards;
+}
+
+@keyframes showText {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    padding: 10px;
+    width: 210px;
+    height: 120px;
+  }
+}

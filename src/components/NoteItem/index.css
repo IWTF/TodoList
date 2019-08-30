@@ -1,0 +1,25 @@
+.note {
+  position: relative;
+  width: 290px;
+  padding-top: 38px;
+  margin-bottom: 10px;
+  background: url(./bg-note-top.png) top center no-repeat;
+}
+
+.del {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.noteContainer {
+  padding: 1px 20px 0;
+  text-indent: 2em;
+  background: url(./bg-note-middle.png) top center repeat-y;
+  overflow: hidden;
+}
+
+.noteBottom {
+  padding-bottom: 34px;
+  background: url(./bg-note-bottom.png) bottom center no-repeat;
+}

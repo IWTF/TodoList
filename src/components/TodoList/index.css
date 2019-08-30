@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+  height: 355px;
+  box-sizing: border-box;
+  padding: 15px 25px;
+  margin: 10px;
+  border:  8px solid #c45a6550;
+}
+
+.addSection {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 4px 10px;
+  background-color: aqua;
+  position: relative;
+  cursor: pointer;
+}
+
+.addSection::after {
+  content: '+';
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-52%);
+}
+
+.editCon {
+  display: flex;
+  flex-direction: row;
+}
+
+.editSection {
+  flex-grow: 1;
+  line-height: 24px;
+  padding: 4px 10px;
+  background-color: aqua;
+  border: none;
+}
+
+.editBtn {
+  line-height: 24px;
+  padding: 4px 15px;
+  background-color: aqua;
+}
+
